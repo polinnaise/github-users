@@ -1,5 +1,7 @@
 # github-users
 
+![Image](./src/assets/front.png "Front page")
+
 ## Project setup
 ```
 npm install
