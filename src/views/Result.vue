@@ -1,6 +1,6 @@
 <template>
   <div>
-  <h3>GitHub User Result</h3> 
+  <h1>GitHub User Result</h1> 
   <main class="result">
     <img v-if="result.avatar_url" 
          :src="result.avatar_url"
@@ -74,8 +74,8 @@ export default {
     max-width: 74%;
     padding: 25px;
     margin: 15px auto;
-    border: 1px solid #d2d7d2;
-    box-shadow: 10px 15px #ff91a4;
+    border: 1px solid #9d55ad;
+    box-shadow: 10px 15px #7f438c;
 }
 
 .result img {
@@ -90,6 +90,6 @@ export default {
     text-align: center;
     font-weight: bolder;
     text-decoration: none;
-    color:#ff91a4;
+    color:#7f438c;
 }
 </style>
