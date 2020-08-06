@@ -18,11 +18,14 @@
   <br>
   <h4 v-if="error" 
       :class="{ 'error-front': error }"
-      >Type username, please!</h4>
-  <h4 class="loading" 
-      v-if="loading">
+      >
+      Type username, please!
+      </h4>
+  <h4 v-if="loading"
+      :class="{ 'loading': loading }"
+      >
       Searching for {{ username }}...
-  </h4>
+      </h4>
   <div class="circle small"></div>
 	<div class="circle medium"></div>
 	<div class="circle big"></div>
@@ -36,13 +39,12 @@ export default {
   return {
     username:'',
     loading: false,
-    error: false
+    error: ''
     }
   },
   //SetTimeout for showing the loading text longer
   methods:  {
     handleSubmit: function() {
-      this.error = true;
       if( this.username ){
       this.loading = true
       this.error = false;
